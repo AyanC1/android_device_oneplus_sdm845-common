@@ -124,13 +124,13 @@ PRODUCT_BOOT_JARS += \
 # ARStickers
 TARGET_INCLUDE_STOCK_ARCORE := true
 PRODUCT_PACKAGES += \
-    ARStickersMod \
-    ARCore \
+    ARCore
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    OnePlusGallery
-    #MGC
+    OnePlusCamera \
+    OnePlusGallery \
+    OnePlusCameraService
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/addon.d/51-oneplus-camera.sh:system/addon.d/51-oneplus-camera.sh  \
