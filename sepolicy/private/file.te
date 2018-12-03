@@ -9,3 +9,7 @@ type sysfs_livedisplay, sysfs_type, fs_type;
 type sysfs_fpc_proximity, sysfs_type, fs_type;
 type sysfs_oem, sysfs_type, fs_type;
 type sysfs_battery_supply, sysfs_type, fs_type;
+type oem_audio_device, dev_type;
+type hal_cameraHIDL_hwservice, service_manager_type;
+type hal_cameraHIDL_default, service_manager_type;
+
