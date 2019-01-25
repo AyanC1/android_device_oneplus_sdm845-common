@@ -49,10 +49,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=9
 
-# IOP
+# QTI Performance
 PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.enable_prefetch=1 \
+    vendor.iop.enable_uxe=1 \
     vendor.iop.enable_prefetch_ofr=1 \
-    vendor.iop.enable_uxe=0
+    vendor.perf.iop_v3.enable=1 \
+    ro.vendor.at_library=libqti-at.so \
+    persist.vendor.qti.games.gt.prof=1
 
 # OTG
 PRODUCT_PROPERTY_OVERRIDES += \
