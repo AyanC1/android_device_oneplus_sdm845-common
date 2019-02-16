@@ -23,6 +23,8 @@
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-sdk
         android:minSdkVersion="24" />
@@ -50,6 +52,21 @@
         </activity>
 
         <activity android:name=".KeyHandler" />
+
+        <activity
+            android:name=".ScreenOffGestureSettings"
+            android:label="@string/screen_off_gesture_title"
+            android:theme="@style/Theme.Main">
+          <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+          </intent-filter>
+          <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_gestures" />
+          <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage" />
+        </activity>
 
         <!-- Restore settings on startup -->
         <receiver android:name="org.lineageos.settings.device.Startup" >
