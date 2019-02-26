@@ -62,7 +62,6 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc \
-    init.kronic.rc \
     init.kronic.sh
 
 # Display
