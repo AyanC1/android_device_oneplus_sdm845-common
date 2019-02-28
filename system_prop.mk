@@ -26,7 +26,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=true \
     persist.sys.camera.preview.size=1920x1080 \
-    vendor.camera.aux.packagelist="com.oneplus.camera"
+    vendor.camera.aux.packagelist=com.oneplus.camera,com.google.android.GoogleCamera,com.dual.GCam
 
 # Debug IMS/VoLTE props
 PRODUCT_PROPERTY_OVERRIDES += \
