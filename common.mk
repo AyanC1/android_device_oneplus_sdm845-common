@@ -129,9 +129,7 @@ PRODUCT_PACKAGES += \
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    OnePlusCamera \
     OnePlusGallery \
-    OnePlusCameraService \
     MGC
 
 PRODUCT_COPY_FILES += \
