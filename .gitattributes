@@ -1,1 +1,2 @@
 *.apk filter=lfs diff=lfs merge=lfs -text
+prebuilts/priv-app/OnePlusGallery/OnePlusGallery.apk filter=lfs diff=lfs merge=lfs -text
