@@ -93,3 +93,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SSR
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.ssr.restart_level=ALL_ENABLE
+
+#Google Assistant enabled here
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opa.eligible_device=true
