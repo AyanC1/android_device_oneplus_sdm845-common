@@ -58,6 +58,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Camera
+PRODUCT_PACKAGES += \
+    CameraPackage
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
@@ -124,13 +128,13 @@ PRODUCT_BOOT_JARS += \
 # ARStickers
 TARGET_INCLUDE_STOCK_ARCORE := true
 PRODUCT_PACKAGES += \
-    ARStickersMod \
-    ARCore \
+    ARCore
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    OnePlusGallery
-    #MGC
+    OnePlusCamera \
+    OnePlusGallery \
+    OnePlusCameraService
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/addon.d/51-oneplus-camera.sh:system/addon.d/51-oneplus-camera.sh  \
