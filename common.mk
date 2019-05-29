@@ -67,7 +67,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc \
-    init.target.rc
+    init.target.rc \
+    init.swap.sh
 
 # Camera
 PRODUCT_PACKAGES += \
