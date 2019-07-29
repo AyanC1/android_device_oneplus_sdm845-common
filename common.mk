@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
+# AOSiP Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -82,7 +86,6 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     libvulkan \
-    DisplayMode \
     vendor.display.config@1.0
 
 # Doze
@@ -164,7 +167,6 @@ PRODUCT_BOOT_JARS += \
 
 # tri-state-key
 PRODUCT_PACKAGES += \
-    KeyHandler \
     tri-state-key_daemon
 
 # Update engine
