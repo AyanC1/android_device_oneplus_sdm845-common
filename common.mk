@@ -161,6 +161,12 @@ PRODUCT_PACKAGES += \
     Tag \
     NfcNci
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
