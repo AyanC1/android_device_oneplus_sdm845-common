@@ -40,12 +40,12 @@ import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.KeyEvent;
 
-import com.android.internal.os.AltDeviceKeyHandler;
+import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
 
 import com.aosip.device.DeviceSettings.Constants;
 
-public class KeyHandler implements AltDeviceKeyHandler {
+public class KeyHandler implements DeviceKeyHandler {
 
     private static final String TAG = KeyHandler.class.getSimpleName();
     private static final int GESTURE_REQUEST = 1;
