@@ -86,7 +86,8 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Snap \
+    init.opcamera.rc
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -187,3 +188,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-sdm845-common.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-sdm845-common.xml
 
 
+# OnePlus Camera HIDL
+PRODUCT_PACKAGES += \
+    vendor.oneplus.camera.CameraHIDL@1.0 \
+    vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper \
+    vendor.oneplus.camera.CameraHIDL-V1.0-java
