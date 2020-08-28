@@ -1,0 +1,14 @@
+[
+  {
+    "repository"  : "kernel_oneplus_sdm845",
+    "target_path" : "kernel/oneplus/sdm845",
+    "branch"      : "ten",
+    "remote"      : "github"
+  },
+  {
+    "repository"  : "vendor_oneplus",
+    "target_path" : "vendor/oneplus",
+    "branch"      : "ten",
+    "remote"      : "github"
+  }
+]
