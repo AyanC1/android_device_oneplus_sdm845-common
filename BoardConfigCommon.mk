@@ -131,6 +131,9 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/fake-sepolicy/private
 #    device/qcom/sepolicy/generic/public \
 #    device/qcom/sepolicy/qva/public
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
@@ -139,6 +142,7 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 -include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
 
 #TempHAX
-BUILD_BROKEN_DUP_RULES := true
 #BUILD_BROKEN_PHONY_TARGETS := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_DUP_RULES := true
+
