@@ -105,7 +105,8 @@ PRODUCT_PACKAGES += \
     Snap \
     vendor.oneplus.camera.CameraHIDL@1.0 \
     vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper \
-    vendor.oneplus.camera.CameraHIDL-V1.0-java
+    vendor.oneplus.camera.CameraHIDL-V1.0-java \
+    libcvface_api
 
 # Common init scripts
 PRODUCT_PACKAGES += \
