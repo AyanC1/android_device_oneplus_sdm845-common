@@ -67,10 +67,10 @@ PRODUCT_PACKAGES += \
     AntHalService
 
 # AOSiP Device Settings
-#PRODUCT_PACKAGES += \
-#    DeviceSettings
 PRODUCT_PACKAGES += \
-    KeyHandler
+    DeviceSettings
+#PRODUCT_PACKAGES += \
+    #KeyHandler
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -102,10 +102,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
-
-
-# Camera HIDL
+    Snap \
     vendor.oneplus.camera.CameraHIDL@1.0 \
     vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper \
     vendor.oneplus.camera.CameraHIDL-V1.0-java
@@ -186,8 +183,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-#PRODUCT_BOOT_JARS += \
- #   telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # tri-state-key
 PRODUCT_PACKAGES += \
