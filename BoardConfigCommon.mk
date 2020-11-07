@@ -133,12 +133,12 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/fake-sepolicy/private
 
 #BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-#    device/qcom/sepolicy/generic/private \
-#    device/qcom/sepolicy/qva/private
+ #   device/qcom/sepolicy/generic/private \
+  #  device/qcom/sepolicy/qva/private
 
 #BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-#    device/qcom/sepolicy/generic/public \
-#    device/qcom/sepolicy/qva/public
+ #   device/qcom/sepolicy/generic/public \
+  #  device/qcom/sepolicy/qva/public
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
