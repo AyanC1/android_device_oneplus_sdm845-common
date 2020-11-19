@@ -378,4 +378,9 @@
         <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
     </integer-array>
 
+    <!-- The default mode for the default display. One of the following values (See Display.java):
+             0 - COLOR_MODE_DEFAULT
+             7 - COLOR_MODE_SRGB
+    -->
+    <integer name="config_defaultDisplayDefaultColorMode">7</integer>
 </resources>
