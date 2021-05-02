@@ -183,8 +183,20 @@ PRODUCT_BOOT_JARS += \
     oneplus-fwk.oneplus_sdm845
 
 # Power
+#PRODUCT_PACKAGES += \
+ #   power.qcom:64
+
+# Libperfmgr
 PRODUCT_PACKAGES += \
-    power.qcom:64
+    android.hardware.power-service.op6-libperfmgr \
+    android.hardware.power.stats@1.0-service.op6
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/lib64/pixel-power-ext-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/pixel-power-ext-V1-ndk_platform.so \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
+    $(LOCAL_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
@@ -252,3 +264,14 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml \
     $(LOCAL_PATH)/permissions/com.google.android.GoogleCamera.xml:system/etc/permissions/com.google.android.GoogleCamera.xml
+
+# Namespace
+TARGET_USE_QTI_BT_STACK := true
+PRODUCT_BOARD_PLATFORM := sdm845
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
+    vendor/qcom/opensource/commonsys/system/bt/conf \
+    hardware/google/pixel \
+    hardware/google/interface
