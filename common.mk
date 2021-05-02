@@ -183,8 +183,20 @@ PRODUCT_BOOT_JARS += \
     oneplus-fwk.oneplus_sdm845
 
 # Power
+#PRODUCT_PACKAGES += \
+ #   power.qcom:64
+
+# Libperfmgr
 PRODUCT_PACKAGES += \
-    power.qcom:64
+    android.hardware.power-service.op6-libperfmgr \
+    android.hardware.power.stats@1.0-service.op6
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/lib64/pixel-power-ext-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/pixel-power-ext-V1-ndk_platform.so \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
+    $(LOCAL_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
